@@ -1,0 +1,177 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.heading {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+nav ul.social-icons li {
+  margin: 0 5px;
+}
+
+nav ul.social-icons li a {
+  color: #555;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+aside {
+  flex: 1;
+  padding-right: 20px;
+}
+
+aside ul.menu {
+  list-style-type: none;
+  border-right: 1px solid #e5e5e5;
+  padding-right: 20px;
+}
+
+aside ul.menu li {
+  margin: 15px 0;
+}
+
+aside ul.menu li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+aside ul.menu li a:hover {
+  color: #e74c3c;
+}
+
+main {
+  flex: 3;
+}
+
+main h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+}
+
+main p {
+  margin: 10px 0;
+  color: #666;
+}
+
+button.learn-more {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+button.learn-more:hover {
+  background-color: #c0392b;
+}
+
+.image {
+  margin-top: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

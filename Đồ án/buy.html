@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Product</title>
+    <link rel="stylesheet" href="buy.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Lấy sản phẩm từ localStorage
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Hiển thị thông tin sản phẩm
+        const productContainer = document.getElementById("product-container");
+
+        if (cart.length === 0) {
+          productContainer.innerHTML =
+            "<p>Không có sản phẩm nào trong giỏ hàng!</p>";
+        } else {
+          cart.forEach((product) => {
+            const productDiv = document.createElement("div");
+            productDiv.classList.add("product");
+
+            productDiv.innerHTML = `
+              <img src="${product.image}" alt="${product.name}" />
+              <h2>${product.name}</h2>
+              <p>Giá: ${product.price}<sup>d</sup></p>
+              <p>Số lượng còn: 50</p> <!-- Giả sử luôn có 50 sản phẩm -->
+            `;
+
+            productContainer.appendChild(productDiv);
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="index.html"><b>Home</b></a>
+          </li>
+          <li>
+            <a href="buy.php"><b>Buy</b></a>
+          </li>
+          <li>
+            <a href="settings.html"><b>Settings</b></a>
+          </li>
+          <li>
+            <a href="login.html" class="btn btn sign-up"><b>Sign up</b></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="heading">
+      <h1><b>Chi tiết sản phẩm</b></h1>
+    </div>
+
+    <div id="product-container" class="rowsp">
+      <!-- Các sản phẩm sẽ được hiển thị ở đây -->
+    </div>
+
+    <footer class="footer">
+      <div class="main-content">
+        <p>&copy; 2024 Online Shop. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+/* Header styles */
+div.header img {
+  height: 10%;
+  width: 100%;
+  max-height: 500px;
+}
+
+/* Navbar styles */
+div.navbar {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: #f0f0f0; /* Light gray background for navbar */
+  border-radius: 1rem;
+  padding: 0 10px;
+  justify-content: center;
+  gap: 20px; /* Space between the links */
+}
+
+div.navbar a {
+  color: #333; /* Dark gray for text */
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+div.navbar a:hover {
+  color: #2a9d8f; /* Soft teal color on hover */
+}
+
+.fa-solid {
+  color: #e76f51; /* Warm color for icons */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #264653; /* Dark teal background */
+  color: #fff; /* White text for contrast */
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul li a {
+  color: #f4a261; /* Warm accent color for footer links */
+  text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+  color: #e9c46a; /* Lighter warm color on hover */
+}
+
+/* Heading styles */
+.heading {
+  background-color: #2a9d8f; /* Soft teal background */
+  height: 50px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.heading h1 {
+  color: white;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+/* Product listing styles */
+.rowsp {
+  width: 100%;
+  background-color: #fafafa; /* Very light background for product listing */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px; /* Add some space between cards */
+}
+
+.cardsp {
+  width: 300px; /* Fixed width for consistency */
+  height: 400px; /* Fixed height for uniformity */
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Ensure elements are spaced evenly */
+  transition: background 0.3s;
+}
+
+.cardsp img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+}
+
+.cardsp p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.cardsp span {
+  display: block;
+  color: #e63946; /* Dark red for prices */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Button group styles */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Ensure buttons take full width */
+  padding: 0 10px; /* Add padding to the container */
+}
+
+/* Button styles */
+.button-container a {
+  flex: 1; /* Ensure buttons are evenly spaced */
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin: 5px;
+  color: white;
+}
+
+.cardsp a:first-of-type {
+  background-color: #e76f51; /* Warm orange for buy button */
+}
+
+.cardsp a.btn-info {
+  background-color: #2a9d8f; /* Change color for details button */
+}
+
+/* Optional: Add hover effects for the details button */
+.cardsp a.btn-info:hover {
+  background-color: #1f7a78; /* Darker teal on hover */
+}
+
+/* Pagination styles */
+div.end {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.end-btn {
+  background-color: #6d6875; /* Soft purple for pagination buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.end-btn.active {
+  background-color: #2a9d8f; /* Teal color for active button */
+}
+
+.end-btn.go {
+  background-color: #e63946; /* Red for the 'Go' button */
+}
+
+.end-btn:hover {
+  background-color: #457b9d; /* Slightly darker shade on hover */
+}
